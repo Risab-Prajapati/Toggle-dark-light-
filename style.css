@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: rgb(20, 176, 219); */
+}
+
+nav {
+  position: relative;
+  height: 60px;
+  box-shadow: 0 0 0.5rem rgb(150, 147, 147);
+  color: black;
+  /* background-color: hsl(0, 0%, 5%); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.logo {
+  font-size: 1.7rem;
+}
+
+nav {
+  position: relative;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid transparent;
+  padding: 20px 20px;
+}
+
+ul li a:hover {
+  background-color: hsl(0, 5%, 88%);
+  /* width: 100px; */
+  /* padding: 20px 20px; */
+}
+
+.icon {
+  font-size: 1.2rem;
+  display: none;
+}
+
+.toggle-on,
+.toggle-off {
+  font-size: 1.8rem;
+  margin-left: 10px;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.toggle-on {
+  display: none;
+}
+
+.center {
+  padding: 15px;
+}
+
+.footer {
+  height: 60px;
+  color: black;
+  box-shadow: 0 0 1rem grey;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@media screen and (max-width: 614px) {
+  nav ul {
+    display: none;
+  }
+  .icon {
+    display: flex;
+  }
+
+  .active {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: hsl(0, 0%, 15%);
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  ul li {
+    padding: 15px 30px;
+  }
+
+  .menu li a:hover {
+    background-color: transparent;
+    color: hsl(0, 100%, 50%);
+  }
+
+  .icon {
+    cursor: pointer;
+  }
+}
