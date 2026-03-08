@@ -15,8 +15,13 @@
 }
 
 .nav i {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   cursor: pointer;
+  margin: 0 15px;
+}
+
+#toggle-on {
+  display: none;
 }
 
 * {
@@ -31,7 +36,6 @@ body {
 
 .center {
   padding: 10px;
-  min-height: 80vh;
 }
 
 .center p {
@@ -50,17 +54,22 @@ body {
 .nav ul {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 0;
+  margin: 0;
 }
 
 .nav ul li a {
   text-decoration: none;
   color: var(--base-color);
 }
+
 .nav ul li {
-  margin-inline: 10rem;
   list-style-type: none;
   font-size: 1.2rem;
   font-weight: 600;
+  margin-inline: 2rem;
 }
 
 .header h2,
